@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+
+body {
+    background-image: url(./Assests/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.search {
+
+    display: flex;
+    margin: auto;
+    width: 90%;
+    max-width: 370px;
+    margin-top: 40px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbox {
+    width: 100%;
+    max-width: 470px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 5px 10px;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.searchbox input {
+    border: 0;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-style: italic;
+    width: 100%;
+}
+
+::placeholder {
+    color: #475a54;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.searchbox button {
+    border: 0;
+    background: transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.searchbox button img {
+    width: 25px;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    margin: 25px auto 0;
+    border-radius: 20px;
+    padding: 35px 35px 60px 35px;
+    text-align: center;
+
+}
+
+.weather_icon {
+    width: 170px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.card {
+    display: none;
+}
+
+.error {
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-style: italic;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    margin: 200px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    display: none;
+}
+
+.detail {
+    width: 30%;
+    height: 130px;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px 10px;
+    font-size: 20px;
+}
+
+.detail1 {
+    width: 30%;
+    height: 130px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px 10px;
+    font-size: 20px;
+
+}
+
+@media screen and (max-width: 515px) {
+
+    .detail {
+        font-size: 18px;
+    }
+
+    .detail1 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .detail {
+        position: relative;
+        font-size: 18px;
+    }
+
+    .detail1 {
+        position: relative;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 438px) {
+
+    .detail {
+        width: 130px !important;
+    }
+
+    .detail1 {
+        width: 130px !important;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .d1 {
+        width: 50% !important;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .d1 {
+        width: 50% !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .hum_main {
+        gap: 1rem;
+    }
+
+    .card {
+        width: 97%;
+    }
+
+    .searchbox input {
+
+        font-size: 14px;
+    }
+
+    .searchbox input::placeholder {
+
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width: 290px) {
+    .searchbox input {
+        padding: 17px 4px;
+    }
+}
+
+.searchbox button img {
+    width: 25px;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+}
+
+.d1 {
+    width: 100% !important;
+}
+
+.wind {
+    white-space: nowrap;
+}
+
+.weather {
+    position: relative;
+}
+
+.hum_main {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
